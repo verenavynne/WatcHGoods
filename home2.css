@@ -1,0 +1,726 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: white;
+    font-family: "Gotham Pro";
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('HOME\ -\ Headline.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after{
+  
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    
+}
+
+.hero .content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+
+}
+
+.hero .content h6{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Gotham Pro";
+    color:white;
+    padding-bottom: 2%;
+}
+
+.hero .content h1{
+    position: relative;
+   
+    font-family: NewYork;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 10%;
+    font-size: 100px;
+
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 5%;
+}
+
+
+
+.hero .content a {
+   
+    text-decoration: none;
+    font-family: "Gotham Pro";
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+  
+    text-align: center;
+  
+    padding:17px 50px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    background: rgb(255, 255, 255,0) ;
+
+
+}
+
+.content a:hover{
+   
+    text-decoration: none;
+    font-family: "Gotham Pro";
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+
+    text-align: center;
+  
+    padding:17px 50px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    background: white ;
+
+}
+
+.description{
+    height:70vh;
+    display:flex;
+    position:relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    column-gap: 2rem;
+    background-color: #26261F;
+
+   
+}
+
+
+
+.welcometo p{
+    padding-left:30%;
+    padding-bottom: 50%;
+    text-align: left;
+    align-items: center;
+    font-family: NewYork;
+    font-size: 300%;
+    color:#F0EFEA;
+    /* padding-right: 3%; */
+}
+
+.divlearn{
+    padding-top: 2rem;
+}
+
+.learnmore{
+    
+    font-size: 150%;
+    font-family: "Gotham Pro";
+    color:#F0EFEA;
+    border-radius: 60%;
+    margin-left:20%;
+    padding:1rem;
+    border: 1px solid#F5F4EF;
+   
+}
+
+.learnmore:hover{
+    color:#26261F;
+    background-color: #F0EFEA;
+   
+}
+
+
+
+.watchgoodis{
+    font-family: "Gotham Pro";
+    text-align: left;
+    font-size:150%;
+    padding-right: 30%;
+    color:#F0EFEA;
+    
+   
+}
+
+.modelimage{
+  
+    width: 20%;
+    height:70%;
+    margin-left: 6rem;
+    margin-right: 2rem;
+    border-radius: 60%;
+}
+
+
+/* Why WatchGoods */
+.Why-watchgoods{
+   
+
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* width: 1600px; */
+    min-height: 30vh;
+    background-color: #F0EFEA;
+    display: flex;
+    position: relative;
+ 
+}
+
+.Why-watchgoods p{
+
+    font-family: "Gotham Pro";
+    color: #26261F;
+    font-size: 35px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+
+.Why-authentic{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.Why-brands{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.Why-price{
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Popular watch */
+.popular{
+    margin-top: 4rem;
+    padding:1rem;
+    background-color: white;
+}
+
+.popular-text{
+    font-family: NewYork;
+    font-size: 50px;
+    padding-left: 90px;
+    padding-bottom: 50px;
+}
+
+.card{
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    column-gap: 58px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+.view{
+    text-decoration: none;
+}
+
+.card1{
+    display:block;
+    position: relative;
+    width: 278px;
+    height: 391px;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid#CABFB3;
+
+}
+
+
+.card .cardname{
+    padding-top: 14rem;
+    align-items: center;
+    text-align: center;
+}
+
+.card1 .watch-image{
+    position: absolute;
+    width: 170px;
+    height: 225px;
+    align-items: center;
+    padding-top: 30px;
+
+    margin-left:20%;
+
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+}
+
+.watch-image:hover{
+    -webkit-transform: scale(1.20);
+    transform: scale(1.20);
+}
+
+.card1 .brand{
+    font-family: 'Gotham Pro';
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    padding-top:1.5rem;
+    color: #6D6A6A;
+
+}
+
+.card1 .watch-name{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+
+    font-size: 15px;
+
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.card1 .line2{
+
+    width:70px;
+    height:20px;
+    align-items: center;
+}
+
+.card1 .price{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.seemore{
+    text-align: right;
+    font-family: "Gotham Pro";
+    font-size: 20px;
+    color: black;
+    float: right;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+    
+}
+
+.seemore:hover{
+    color:#806554;
+    border-bottom: 1px solid #806554;
+}
+
+/* discount banner */
+.disc{
+    margin-top: 5rem;
+    height:40vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('banner4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.disc h6{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Gotham Pro";
+    color:white;
+    padding-bottom: 2%;
+    align-items: center;
+    text-align: center;
+}
+
+.disc h1{
+    
+    font-family: NewYork;
+    font-style: normal;
+  
+    font-size: 35px;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* brands */
+
+.brand-names{
+    /* padding-top: 3rem; */
+    background-color: #F0EFEA;
+    padding-bottom: 6rem;
+}
+
+.brand-names .brand-text{
+    font-size: 50px;
+    font-family: NewYork;
+    padding-left: 90px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.brand-group1{
+ 
+    justify-content: center;
+    text-align: center;
+    width:90%;
+    display:flex;
+    position: relative;
+    column-gap: 2rem;
+    margin-bottom: 2%;
+    margin-left:5%;
+
+}
+
+.brand1{
+    min-height: 40vh;
+    width: 30%;
+    background-image:url(home\ -\ rolex.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    position: relative;
+    column-gap: 2rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+}
+
+.brand2{
+    min-height: 40vh;
+    width: 30%;
+    background-image:url(home\ -\ omega.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    position: relative;
+    column-gap: 2rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+}
+
+.brand3{
+    min-height: 40vh;
+    width: 30%;
+    background-image:url(home\ -\ hublot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    position: relative;
+    column-gap: 2rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+}
+
+.brand4{
+    min-height: 40vh;
+    width: 30%;
+    background-image:url(home\ -\ patek.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    position: relative;
+    column-gap: 2rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+}
+
+.brand5{
+    min-height: 40vh;
+    width: 30%;
+    background-image:url(home\ -\ cartier.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    position: relative;
+    column-gap: 2rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+}
+
+.brand6{
+    min-height: 40vh;
+    width: 30%;
+    background-image:url(home\ -\ panerai.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    position: relative;
+    column-gap: 2rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+}
+
+.brand-group1 a{
+    font-family: "Gotham Pro";
+    font-size: 200%;
+    color: white;
+    text-decoration: 2px underline;
+    text-align: center;
+
+}
+
+
+
+.brand1:hover{
+   cursor: pointer;
+   -webkit-transform: scale(1.20);
+    transform: scale(1.20);
+   
+
+}
+
+.brand2:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.20);
+     transform: scale(1.20);
+    
+ 
+ }
+
+ 
+.brand3:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.20);
+     transform: scale(1.20);
+  
+} 
+.brand4:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.20);
+     transform: scale(1.20);
+ 
+}
+
+.brand5:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.20);
+     transform: scale(1.20);
+}
+
+.brand6:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.20);
+     transform: scale(1.20);
+ 
+}
+
+@media (max-width:1366px){
+    html{
+        font-size:70%;
+
+        .description{
+            min-height: 60vh;
+        }
+
+
+        .welcometo p{
+            font-family: NewYork;
+            font-size: 40px;
+        }
+
+
+
+        .card .cardname{
+            position: relative;
+            padding-top: 100%;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .card1 .watch-image{
+            position: absolute;
+            width: 150px;
+            height: 205px;
+            align-items: center;
+            padding-top: 40px;
+        
+            margin-left:20%;
+        }
+   
+    }
+}
+
+@media (max-width:758px){
+    html{
+        font-size:62.5%;
+        
+        .Why-watchgoods{
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 20vh;
+            background-color: #F0EFEA;
+            display: block;
+            position: relative;
+            padding:2rem;
+        }
+
+        .Why-watchgoods p{
+            font-family: "Gotham Pro";
+            color: #26261F;
+            font-size: 25px;
+            display:block;
+            padding:1rem;
+            align-items: center;
+            text-align: center;
+        }
+        
+    }
+}
+
+.container{
+	bottom:0;
+	left:0;
+	right:0;
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	bottom:0;
+	left:0;
+	right:0;
+	background-color: rgb(36, 38, 43, 0.95);
+    padding: 70px 0;
+}
+
+.footer1{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer1 h4{
+	font-size: 17px;
+	color: #F0EFEA;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer1 h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #9A6740;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer1 ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer1 ul li a{
+	font-size: 15px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer1 ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+
+.footer1 .sosmed a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+    padding-top:0.3rem;
+}
+.footer1 .sosmed a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.footer .sosmed .icon{
+    height:20px;
+    width: 20px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer1{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px){
+  .footer1{
+    width: 100%;
+}
+}

@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #F0EFEA;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.2rem 7%;
+    position: fixed;
+
+    background-color: rgba(202, 191, 179, 0.7);
+    border-bottom: 1px solid #D5C0A8;
+    top:0;
+    left:0;
+    right:0;
+    z-index:9999;
+  
+}
+
+.navbar .headline{
+    color:black;
+    font-family: NewYork;
+    font-size: 30px;
+    /* font-weight: 700px; */
+
+}
+
+.navbar .Menu a{
+    display: inline-block;
+    margin: 0 1rem;
+    color:black;
+    font-family: 'Gotham Pro';
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.Menu a:hover{
+    cursor: pointer;
+    color: #9A6740;
+
+
+}
+
+.Menu a::after{
+    content: '';
+    display: block;
+    border-bottom-style: solid;
+    border-bottom-color:#9A6740;
+    border-bottom-width: 0.1rem;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.Menu a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar-extra a{
+    color:black;
+    margin:0 0.5rem;
+}
+
+.navbar-extra a:hover{
+    color:#9A6740;
+
+}
+
+
+.active1{
+
+    font-family: "Gotham Pro";
+    font-size:15px;
+    text-decoration: none;
+    color: #9A6740;
+    border-bottom-style: solid;
+    border-bottom-color:#9A6740;
+    border-bottom-width: 0.1rem;
+
+}
+
+
+
+#hamburger{
+    display:none;
+}
+
+
+
+/* Media Queries */
+
+/* laptop */
+@media (max-width:1366px){
+    html{
+        font-size:70%;
+    }
+}
+
+/* Tablet */
+@media (max-width:758px){
+    html{
+        font-size:62.5%;
+    }
+
+    #hamburger{
+        display:inline-block;
+    }
+
+    .Menu{
+        position:absolute;
+        top:100%;
+        right:-100%;
+        width:30rem;
+        height:100vh;
+        background-color: rgb(0, 0, 0,0.7) ;
+        transition: 0.3s;
+    }
+
+    .Menu.active{
+        right:0;
+    }
+
+    .navbar .Menu a{
+        color:white;
+        display:block;
+        margin:1.5rem;
+        padding:0.5rem;
+        font-size: 2rem;
+    }
+
+    
+    .Menu a::after{
+        border-bottom-style: solid;
+        border-bottom-color:white;
+        border-bottom-width: 0.1rem;
+        transform-origin: 0 0;
+    }
+
+    .Menu a:hover::after{
+        transform: scaleX(0.2);
+        transform-origin: 0 0;
+    }
+}
+
+/* Phone */
+@media (max-width:450px){
+    html{
+        font-size:55%;
+    }
+}
+
+
+
+

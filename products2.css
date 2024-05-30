@@ -1,0 +1,626 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0EFEA ;
+    font-family: "Gotham Pro";
+    
+}
+
+/* Navbar */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #F0EFEA;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.2rem 7%;
+    position: fixed;
+
+    background-color: rgba(202, 191, 179, 0.7);
+    border-bottom: 1px solid #D5C0A8;
+    top:0;
+    left:0;
+    right:0;
+    z-index:9999;
+  
+}
+
+.navbar .headline{
+    color:black;
+    font-family: NewYork;
+    font-size: 30px;
+
+}
+
+.navbar .Menu a{
+    display: inline-block;
+    margin: 0 1rem;
+    color:black;
+    font-family: 'Gotham Pro';
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.Menu a:hover{
+    cursor: pointer;
+    color: #9A6740;
+
+
+}
+
+.Menu a::after{
+    content: '';
+    display: block;
+    border-bottom-style: solid;
+    border-bottom-color:#9A6740;
+    border-bottom-width: 0.1rem;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.Menu a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar-extra a{
+    color:black;
+    margin:0 0.5rem;
+}
+
+.navbar-extra a:hover{
+    color:#9A6740;
+
+}
+
+
+.active1{
+
+    font-family: "Gotham Pro";
+    font-size:15px;
+    text-decoration: none;
+    color: #9A6740;
+    border-bottom-style: solid;
+    border-bottom-color:#9A6740;
+    border-bottom-width: 0.1rem;
+
+}
+
+
+/* Media Queries untuk navbar */
+#hamburger{
+    display:none;
+}
+
+@media (max-width:1366px){
+    html{
+      
+        font-size:70%;
+        
+        
+    }
+}
+
+@media (max-width:758px){
+   
+   html{
+    font-size: 62.5%;
+   }
+       
+ 
+    #hamburger{
+        display:inline-block;
+    }
+
+    .Menu{
+        position:absolute;
+        top:100%;
+        right:-100%;
+        width:30rem;
+        height:100vh;
+        background-color: rgb(0, 0, 0,0.7) ;
+        transition: 0.3s;
+    }
+
+    .Menu.active{
+        right:0;
+    }
+
+    .navbar .Menu a{
+        color:white;
+        display:block;
+        margin:1.5rem;
+        padding:0.5rem;
+        font-size: 2rem;
+    }
+
+    
+    .Menu a::after{
+        border-bottom-style: solid;
+        border-bottom-color:white;
+        border-bottom-width: 0.1rem;
+        transform-origin: 0 0;
+    }
+
+    .Menu a:hover::after{
+        transform: scaleX(0.2);
+        transform-origin: 0 0;
+    }
+}
+
+@media (max-width:450px){
+    html{
+      
+            font-size:55%;
+       
+       
+    }
+}
+
+/* Slide gambar otomatis */
+.slider{
+	justify-content: center;
+	position: relative;
+	width: 80%;
+	background: #F0EFEA; 
+	margin-top: 8%;
+	left:15%;
+	right:40%;
+}
+.myslide{
+	height: 450px;
+	width:90%;
+	display: none;
+	overflow: hidden;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 15px;
+	padding: 40px;
+    padding-right:170px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #806554; 
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+    position: absolute;
+    left: 45%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #CABFB3;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.active, .dot:hover{
+	background-color: #CABFB3;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+.myslide img{
+	transform: scale(1, 1);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 20s;
+  	animation-name: zoomin;
+  	animation-duration: 20s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+
+}
+
+@media screen and (max-width: 520px){
+	
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
+
+
+
+/* Products */
+
+.products-see{
+    margin-top: 5%;
+    
+    display:flex;
+    position:relative;
+}
+
+.filter{
+  
+    width:30%;
+    background-color: #806554;
+    padding-top: 33px;
+  
+    margin:0;
+    margin-bottom: 2rem;
+    margin-right:8%;
+}
+
+.filter-judul{
+    font-size: 40px;
+    font-family: NewYork;
+    font-weight: 400px;
+    padding-left:32px;
+    padding-bottom: 28px;
+    color:white;
+
+}
+
+.filter-line{
+
+    top:705.5px;
+    left:-0.5px;
+    border-top: 1px solid #CABFB3;
+    box-sizing: border-box;
+    width:100%;
+    height:1px;
+
+}
+
+.brand-judul{
+    font-size: 30px;
+    font-family: "Gotham Pro";
+    color:white;
+    padding-top:28px;
+    padding-bottom: 28px;
+    padding-left: 31px;
+    
+}
+
+.brand6 p{
+    font-size: 25px;
+    font-family: "Gotham Pro";
+    color:white;
+    padding-left: 31px;
+    padding-top: 28px;
+    padding-bottom:28px;
+    align-items: center;
+   
+}
+
+
+.filter a{
+    text-decoration: none;
+}
+
+.brand6 p:hover{
+  
+    border-bottom-style: solid;
+    border-bottom-color:#CABFB3;
+    border-bottom-width: 2px;
+  
+}
+
+.active2{
+    
+    font-size: 25px;
+    font-family: "Gotham Pro";
+    color:white;
+    margin-left: 30px;
+    padding-bottom:28px;
+    text-decoration: none;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-color:#CABFB3;
+    border-bottom-width: 3px;
+    width: fit-content;
+
+}
+
+.watches-products{
+    display:block;
+}
+
+.sortby{
+    justify-content: right;
+    margin-right: 5%;
+    padding-bottom: 2rem;
+    display:flex;
+    position:relative;
+}
+
+.watches-products .sort{
+    font-size: 20px;
+    font-family: "Gotham Pro";
+    color:#806554;
+    display:flex;
+    position:relative;
+}
+
+.tree-symbol{
+    height:20px;
+    width:21px;
+}
+
+.products1{
+   
+    display:flex;
+    position:relative;
+   
+    padding-right:3rem;
+    padding-left: 1rem;
+    column-gap: 4%;
+    padding-bottom: 4%;
+   
+}
+
+.products2{
+    display:flex;
+    position:relative;
+   
+    padding-right:3rem;
+    padding-left: 1rem;
+    column-gap: 4%;
+    padding-bottom: 4%;
+}
+
+.products3{
+    display:flex;
+    position:relative;
+   
+    padding-right:3rem;
+    padding-left: 1rem;
+    column-gap: 4%;
+    padding-bottom: 4%;
+}
+
+.card1{
+    justify-content: center;
+    display:flex;
+    position: relative;
+    width: 150%;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+    height: 50%;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid#CABFB3;
+
+}
+
+.card .cardname{
+    align-items: center;
+    text-align: center;
+}
+
+.card1 .watch-image{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    padding-bottom:4.5rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+
+
+.watch-image:hover{
+    -webkit-transform: scale(1.20);
+    transform: scale(1.20);
+}
+
+.card1 .brand{
+
+    font-family: 'Gotham Pro';
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    padding-top: 16rem;
+    color: #6D6A6A;
+
+}
+
+.card1 .watch-name{
+  
+    margin-bottom: 0.5rem;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+
+    font-size: 15px;
+
+    align-items: center;
+    text-align: center;
+    color: #26261F;
+}
+
+.card1 .line2{
+    justify-content: center;
+
+    margin-left:30px;
+    width:60%;
+    height:15px;
+    align-items: center;
+   
+}
+
+.card1 .price{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.load{
+    cursor: pointer;
+    font-family: "Gotham Pro";
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    width:35%;
+    background-color: #26261F;
+ 
+    margin-left:30%;
+ 
+}
+
+.load p{
+    padding:5%;
+    text-align: center;
+    color:white;
+    align-items: center;
+}
+
+.load:hover{
+    background-color: #806554;
+}
+
+
+@media (max-width:758px){
+    html{
+       
+        .card1 .watch-image{
+            position: absolute;
+            width: 70%;
+            height: 75%;
+            align-items: center;
+            padding-bottom:6rem;
+            
+       
+        }
+
+        .card1 .watch-name{
+            font-size: 13px;
+            padding-left:2%;
+            padding-right: 2%;
+          
+        }
+
+        .card1 .brand{
+            font-size: 13px;
+           
+        }
+
+        .card1 .price{
+            
+            font-size: 13px;
+            padding-bottom: 5%;
+        }
+
+        .load{
+            font-size: 13px;
+        }
+
+       
+
+        .filter-judul{
+            font-size: 20px;
+            font-family: NewYork;
+            padding-left:32px;
+            padding-bottom: 28px;
+        
+
+        }
+
+        .brand6 p{
+            font-size: 15px;
+            padding-top: 15px;
+            padding-bottom:15px;
+        }
+
+        .active2{
+            font-size: 15px;
+            padding-bottom:15px;
+            
+        
+        }
+        
+        
+    }
+}
